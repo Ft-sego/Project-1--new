@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+h1, p {
+    color: #ff4757;
+}
+
+.buttons {
+    position: relative;
+    width: 320px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    font-size: 1rem;
+}
+
+.yes {
+    background: #ff6b6b;
+    color: white;
+    left: 40px;
+    top: 50px;
+}
+
+.no {
+    background: #ffecec;
+    color: #ff4757;
+    right: 40px;
+    top: 50px;
+    transition: all 0.2s ease;
+}
+
+#noBtn.shake {
+    animation: shake 0.3s;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Love meter */
+#loveMeter {
+    margin-top: 30px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Floating hearts */
+.heart {
+    position: absolute;
+    font-size: 20px;
+    animation: floatUp 10s linear infinite;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-10vh);
+        opacity: 0;
+    }
+}
