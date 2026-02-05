@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Will You Be My Valentine? 💝</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div id="floating-hearts"></div>
+
+    <h1 id="title">Mbalenhle 💖</h1>
+    <p id="question">Do you like me?</p>
+
+    <div class="buttons">
+        <button id="yesBtn" class="btn yes">Yes</button>
+        <button id="noBtn" class="btn no">No</button>
+    </div>
+
+    <div id="loveMeter" class="hidden">
+        <p id="meterText">This much!</p>
+        <input type="range" min="0" max="6000" value="100" />
+        <span id="percent">100%</span>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="https://res.cloudinary.com/dncywqfpb/video/upload/v1738399057/music_qrhjvy.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
